@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <header><h1>Jogo da Velha</h1></header>
+    <div  id="caixa" class=" disabled container">
+    <div class="sobrepor">
+        <button id="fechar">x</button>
+        <div class="winner">
+            
+        </div>
+    </div>
+</div>
+    <main>
+
+    <table id="jogo">
+        <tr>
+            <td data-item="a1" class="secao" id="esqCima"></td>
+            <td data-item="a2" class="secao" id="meioCima"></td>
+            <td data-item="a3" class="secao" id="dirCima"></td>
+        </tr>
+
+        <tr>
+            <td data-item="b1" class="secao" id="esqCentro"></td>
+            <td data-item="b2" class="secao" id="meioCentro"></td>
+            <td data-item="b3" class="secao" id="dirCentro"></td>
+        </tr>
+
+        <tr>
+            <td data-item="c1" class="secao" id="esqBaixo"></td>
+            <td data-item="c2" class="secao" id="meioBaixo"></td>
+            <td data-item="c3" class="secao" id="dirBaixo"></td>
+        </tr>
+    </table>
+        
+    </main>
+    <section>
+        <div class="placar">
+        <div><p>Sua vez:</p>
+        <p class="vez">o</p></div>
+        <div><p>O vencedor:</p><p class="win">x</p></div>
+    </div>
+    <button  class="resetButton" onclick="resetar()">Resetar</button>
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>
